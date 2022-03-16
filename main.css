@@ -276,12 +276,15 @@ div.project_card {
 div.project_card img {
   height: 90%;
   width: 100%;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
   object-fit: cover;
 }
 
 div.project_card img:hover,
 div.project_card img:active {
-  filter: sepia(80%);
+  filter: grayscale(80%);
+  transform: scale(0.98);
 }
 
 .project_link,
